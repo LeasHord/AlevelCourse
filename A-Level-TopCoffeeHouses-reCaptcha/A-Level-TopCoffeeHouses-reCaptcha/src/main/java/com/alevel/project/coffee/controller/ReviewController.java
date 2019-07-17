@@ -22,6 +22,7 @@ public class ReviewController {
     @Autowired
     private ReviewRepository reviewRepository;
 
+
     @GetMapping
     public String review(Map<String, Object> model) {
         Iterable<Review> reviews = reviewRepository.findAll();
